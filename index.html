@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive Website</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="navbar">
+                <span class="site-icon"><i class="fa fa-square"></i></span>
+                <a href="#atlas">Atlas</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#news">News</a>
+                <a href="#random">Random</a>
+                <a href="#fashion">Fashion</a>
+                <span class="search-icon"><i class="fa fa-search"></i></span>
+            </div>
+        </div>
+        <div class="main1">
+            <div id="container1" onmouseover="Upper(event)" style="background-image: url('image11web.jpg');">
+                <h1>American sweet pancakes with honey</h1>
+                <h2>about a year ago</h2>
+            </div>
+            <div id="container2" onmouseover="Upper(event)" style="background-image: url('image22web.jpg');">
+                <h1>How to spend a vacation in the Maldives</h1>
+                <h2>about a year ago</h2>
+            </div>
+            <div id="container3" onmouseover="Upper(event)" style="background-image: url('image33web.jpg');">
+                <h1>Fashion & Style Tips Every Woman Should Know</h1>
+                <h2>11 months ago</h2>
+            </div>
+            <div id="container4" onmouseover="Upper(event)" style="background-image: url('image44web.jpg');">
+                <h1>How lovely yellow is! It stands for the sun</h1>
+                <h2>about a year ago</h2>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="first">
+                <div class="firstone" id="container5" onmouseover="Upper(event)" style="background-image: url('image55web.jpg');">
+                    <h1>Give up your seat for someone who needs it</h1>
+                    <h2>about a year ago</h2>
+                </div>
+                <div class="firsttwo" id="container6" onmouseover="Upper(event)" style="background-image: url('image66web.jpg');">
+                    <h1>Fast food is popular because it's convenient</h1>
+                    <h2>about a year ago</h2>
+                </div>
+            </div>
+            <div class="second">
+                <div class="secondone" id="container9" onmouseover="Upper(event)" style="background-image: url('image11web.jpg');">
+                    <h1>American sweet pancakes with honey</h1>
+                    <h2>about a year ago</h2>
+                </div>
+            </div>
+            <div class="third">
+                <div class="thirdone" id="container7" onmouseover="Upper(event)" style="background-image: url('image77web.jpg');">
+                    <h1>For good results must be make good plan</h1>
+                    <h2>about a year ago</h2>
+                </div>
+                <div class="thirdtwo" id="container8" onmouseover="Upper(event)" style="background-image: url('image88web.jpg');">
+                    <h1>If you think lifting is dangerous, try being weak</h1>
+                    <h2>about a year ago</h2>
+                </div>
+            </div>
+        </div>
+        <script>
+            function Upper(e){
+                if(window.innerWidth>=992){
+                var temp=e.target.parentElement.id;
+                document.getElementById('container9').innerHTML=document.getElementById(temp).innerHTML;
+                document.getElementById('container9').style.backgroundImage=document.getElementById(temp).style.backgroundImage;
+                }
+            }
+        </script>
+    </body>
+</html>
